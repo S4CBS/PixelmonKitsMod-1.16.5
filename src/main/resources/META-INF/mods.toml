@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT License"
+
+[[mods]]
+modId="pixelmonkits"
+version="1.0.0"
+displayName="PixelmonKits-1.16.5"
+credits="Created by S4CBS"
+displayURL="https://github.com/S4CBS/PixelmonKitsMod-1.16.5?tab=MIT-1-ov-file"
+authors="S4CBS"
+description="""Mod's main func to add kit start in singlemode (Pixelmon-1.16.5 mod)
+Commands:
+- /fly
+- /god
+- /checkstatus
+- /reloadkits
+Created By S4CBS:
+GitHub = https://github.com/S4CBS"""
+
+[[dependencies.pixelmonkits]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.16.5]"
+ordering="NONE"
+side="BOTH"
+
