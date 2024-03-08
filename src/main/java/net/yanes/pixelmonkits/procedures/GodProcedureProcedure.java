@@ -4,6 +4,7 @@ import net.yanes.pixelmonkits.PixelmonkitsModVariables;
 import net.yanes.pixelmonkits.PixelmonkitsMod;
 
 import net.minecraft.world.IWorld;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
@@ -31,6 +32,9 @@ public class GodProcedureProcedure {
 			}
 			PixelmonkitsModVariables.MapVariables.get(world).god = 1;
 			PixelmonkitsModVariables.MapVariables.get(world).syncData(world);
+			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("God \u0432\u043A\u043B\u044E\u0447\u0435\u043D"), (false));
+			}
 		} else if (PixelmonkitsModVariables.MapVariables.get(world).god == 1) {
 			if (entity instanceof PlayerEntity) {
 				((PlayerEntity) entity).abilities.disableDamage = (false);
@@ -38,6 +42,9 @@ public class GodProcedureProcedure {
 			}
 			PixelmonkitsModVariables.MapVariables.get(world).god = 0;
 			PixelmonkitsModVariables.MapVariables.get(world).syncData(world);
+			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("God \u0432\u044B\u043A\u043B\u044E\u0447\u0435\u043D"), (false));
+			}
 		}
 	}
 }

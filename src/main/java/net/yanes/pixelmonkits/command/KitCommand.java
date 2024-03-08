@@ -2,6 +2,7 @@
 package net.yanes.pixelmonkits.command;
 
 import net.yanes.pixelmonkits.procedures.KitStartProcedure;
+import net.yanes.pixelmonkits.procedures.KitStartPlusProcedure;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -38,6 +39,22 @@ public class KitCommand {
 					Direction direction = entity.getHorizontalFacing();
 
 					KitStartProcedure.executeProcedure(Stream
+							.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+									new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z),
+									new AbstractMap.SimpleEntry<>("entity", entity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+					return 0;
+				})).then(Commands.literal("startplus").executes(arguments -> {
+					ServerWorld world = arguments.getSource().getWorld();
+					double x = arguments.getSource().getPos().getX();
+					double y = arguments.getSource().getPos().getY();
+					double z = arguments.getSource().getPos().getZ();
+					Entity entity = arguments.getSource().getEntity();
+					if (entity == null)
+						entity = FakePlayerFactory.getMinecraft(world);
+					Direction direction = entity.getHorizontalFacing();
+
+					KitStartPlusProcedure.executeProcedure(Stream
 							.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
 									new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z),
 									new AbstractMap.SimpleEntry<>("entity", entity))

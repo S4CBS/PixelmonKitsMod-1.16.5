@@ -89,6 +89,7 @@ public class PixelmonkitsModVariables {
 		public double god = 0.0;
 		public double fly = 0;
 		public double kitstart = 0;
+		public double kitstartplus = 0;
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -103,6 +104,7 @@ public class PixelmonkitsModVariables {
 			god = nbt.getDouble("god");
 			fly = nbt.getDouble("fly");
 			kitstart = nbt.getDouble("kitstart");
+			kitstartplus = nbt.getDouble("kitstartplus");
 		}
 
 		@Override
@@ -110,6 +112,7 @@ public class PixelmonkitsModVariables {
 			nbt.putDouble("god", god);
 			nbt.putDouble("fly", fly);
 			nbt.putDouble("kitstart", kitstart);
+			nbt.putDouble("kitstartplus", kitstartplus);
 			return nbt;
 		}
 

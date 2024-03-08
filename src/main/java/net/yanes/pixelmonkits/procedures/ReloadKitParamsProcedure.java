@@ -39,5 +39,19 @@ public class ReloadKitParamsProcedure {
 			PixelmonkitsModVariables.MapVariables.get(world).kitstart = 0;
 			PixelmonkitsModVariables.MapVariables.get(world).syncData(world);
 		}
+		if (PixelmonkitsModVariables.MapVariables.get(world).kitstartplus == 0) {
+			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Kit StartPlus \u0434\u043E\u0441\u0442\u0443\u043F\u0435\u043D!"),
+						(false));
+			}
+		} else if (PixelmonkitsModVariables.MapVariables.get(world).kitstartplus == 1) {
+			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+				((PlayerEntity) entity).sendStatusMessage(
+						new StringTextComponent("Kit StartPlus \u0441\u043D\u043E\u0432\u0430 \u0434\u043E\u0441\u0442\u0443\u043F\u0435\u043D!"),
+						(false));
+			}
+			PixelmonkitsModVariables.MapVariables.get(world).kitstartplus = 0;
+			PixelmonkitsModVariables.MapVariables.get(world).syncData(world);
+		}
 	}
 }
