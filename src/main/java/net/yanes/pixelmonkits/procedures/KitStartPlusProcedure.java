@@ -92,37 +92,37 @@ public class KitStartPlusProcedure {
 				((World) world).getServer().getCommandManager().handleCommand(
 						new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-						("/give " + entity.getDisplayName().getString() + " " + "aluminium_hammer 1"));
+						("/give " + entity.getDisplayName().getString() + " " + "pixelmon:aluminium_hammer 1"));
 			}
 			if (world instanceof ServerWorld) {
 				((World) world).getServer().getCommandManager().handleCommand(
 						new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-						("/give " + entity.getDisplayName().getString() + " " + "dawn_stone_helm 1"));
+						("/give " + entity.getDisplayName().getString() + " " + "pixelmon:thunder_stone_helm 1"));
 			}
 			if (world instanceof ServerWorld) {
 				((World) world).getServer().getCommandManager().handleCommand(
 						new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-						("/give " + entity.getDisplayName().getString() + " " + "dawn_stone_plate 1"));
+						("/give " + entity.getDisplayName().getString() + " " + "pixelmon:thunder_stone_plate 1"));
 			}
 			if (world instanceof ServerWorld) {
 				((World) world).getServer().getCommandManager().handleCommand(
 						new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-						("/give " + entity.getDisplayName().getString() + " " + "dawn_stone_legs 1"));
+						("/give " + entity.getDisplayName().getString() + " " + "pixelmon:thunder_stone_legs 1"));
 			}
 			if (world instanceof ServerWorld) {
 				((World) world).getServer().getCommandManager().handleCommand(
 						new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-						("/give " + entity.getDisplayName().getString() + " " + "dawn_stone_boots 1"));
+						("/give " + entity.getDisplayName().getString() + " " + "pixelmon:thunder_stone_boots 1"));
 			}
 			if (world instanceof ServerWorld) {
 				((World) world).getServer().getCommandManager().handleCommand(
 						new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-						("/give " + entity.getDisplayName().getString() + " " + "rare_candy 32"));
+						("/give " + entity.getDisplayName().getString() + " " + "pixelmon:rare_candy 32"));
 			}
 		} else {
 			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
