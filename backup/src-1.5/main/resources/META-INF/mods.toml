@@ -5,7 +5,6 @@ license="MIT License"
 [[mods]]
 modId="pixelmonkits"
 version="1.0.0"
-logoFile="logo.png"
 displayName="PixelmonKits-1.16.5"
 credits="Created by S4CBS"
 displayURL="https://github.com/S4CBS/PixelmonKitsMod-1.16.5?tab=MIT-1-ov-file"
@@ -16,10 +15,8 @@ Commands:
 - /god
 - /checkstatus
 - /reloadkits
-- /creative, /survival, /adventure, /spectator
-- /kit (start/startplus)\n
-Created By S4CBS"""
-updateJSONURL = "https://github.com/S4CBS/PixelmonKitsMod-1.16.5/releases/"
+Created By S4CBS:
+GitHub = https://github.com/S4CBS"""
 
 [[dependencies.pixelmonkits]]
 modId="minecraft"

@@ -1,0 +1,9 @@
+{
+  "_fv": 33,
+  "_type": "command",
+  "definition": {
+    "commandName": "gamemode",
+    "permissionLevel": "No requirement",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"138\" y=\"77\"><next><block type=\"literal\"><field name=\"name\">creative</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">NoWork</field></block></statement><next><block type=\"literal\"><field name=\"name\">survival</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">NoWork</field></block></statement><next><block type=\"literal\"><field name=\"name\">adventure</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">NoWork</field></block></statement><next><block type=\"literal\"><field name=\"name\">spectator</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">NoWork</field></block></statement></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}
